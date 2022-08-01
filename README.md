@@ -9,6 +9,47 @@ npm install capacitor-filechooser
 npx cap sync
 ```
 
+## Example
+
+```typescript
+import { FileChooser } from 'capacitor-filechooser'
+
+
+// Add exclution or white list
+constructor(private platfrom: Platform) {
+    this.platfrom.ready().then(() => {
+      // All mime type
+    //   this.chooseFile();
+
+      // mime type .pdf
+      this.chooseFile("application/pdf");
+
+      // mime type .txt
+    //   this.chooseFile("text/plain");
+
+      // mime type .png
+    //   this.chooseFile("image/png");
+
+      // mime type .jpeg
+    //   this.chooseFile("image/jpeg");
+
+      // mime type .wav
+    //   this.chooseFile("audio/wav");
+
+    }
+    )
+  }
+
+chooseFile = async (mime?: string) => {
+    const result = await FileChooser.open({mime});
+  
+    console.log('Result: ');
+    console.log('File: '+result.file);
+    console.log('Path: '+result.path);
+    console.log('Message: '+result.messages);
+  };
+```
+
 ## API
 
 <docgen-index>
