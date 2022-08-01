@@ -1,3 +1,9 @@
 export interface FileChooserPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  open(filter: { mime?: string }): Promise<ChooseFileResult>;
+}
+
+export interface ChooseFileResult {
+  file?: File;
+  path: string;
+  messages?: string;
 }
