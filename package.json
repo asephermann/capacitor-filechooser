@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-filechooser",
+  "name": "@asephermann/capacitor-filechooser",
   "version": "0.0.1",
   "description": "A Capacitor plugin for file chooser",
   "main": "dist/plugin.cjs.js",
@@ -46,7 +46,6 @@
   "devDependencies": {
     "@capacitor/android": "^3.0.0",
     "@capacitor/core": "^3.0.0",
-    "@capacitor/docgen": "^0.0.18",
     "@capacitor/ios": "^3.0.0",
     "@ionic/eslint-config": "^0.3.0",
     "@ionic/prettier-config": "^1.0.1",
@@ -75,7 +74,8 @@
       "src": "android"
     }
   },
+  "homepage": "https://github.com/asephermann/capacitor-filechooser#readme",
   "dependencies": {
-    "docgen": "^0.0.1"
+    "@capacitor/docgen": "^0.2.0"
   }
 }

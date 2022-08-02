@@ -5,7 +5,7 @@ A Capacitor plugin for file chooser
 ## Install
 
 ```bash
-npm install capacitor-filechooser
+npm i @asephermann/capacitor-filechooser
 npx cap sync
 ```
 
