@@ -1,5 +1,5 @@
 export interface FileChooserPlugin {
-  open(filter: { mime?: string }): Promise<ChooseFileResult>;
+  open(filter: { mime_types?: Array<string> }): Promise<ChooseFileResult>;
 }
 
 export interface ChooseFileResult {
