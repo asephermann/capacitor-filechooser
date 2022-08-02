@@ -15,7 +15,6 @@ npx cap sync
 import { FileChooser } from 'capacitor-filechooser'
 
 
-// Add exclution or white list
 constructor(private platfrom: Platform) {
     this.platfrom.ready().then(() => {
       // All mime types
